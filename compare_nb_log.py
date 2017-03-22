@@ -52,6 +52,7 @@ if __name__ == '__main__':
     neg_test, neg_val, neg_train = nb.partition(neg_dir)
     pos_test, pos_val, pos_train = nb.partition(pos_dir)
 
+    # ensure a folder called 'logistic' is created in the working directory
     if not os.path.exists('logistic/test_x.npy'):
         test = hstack((neg_test, pos_test))
         val = hstack((neg_val, pos_val))

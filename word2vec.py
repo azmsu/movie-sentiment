@@ -242,6 +242,7 @@ if __name__ == '__main__':
     neg_dir = 'review_polarity/txt_sentoken/neg'
     pos_dir = 'review_polarity/txt_sentoken/pos'
 
+    # ensure a folder called 'word2vec' is created in the working directory
     if not os.path.exists('word2vec/test_x.npy'):
         neg_test, neg_val, neg_train = partition(neg_dir)
         pos_test, pos_val, pos_train = partition(pos_dir)
